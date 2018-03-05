@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/index.css" rel="stylesheet">
+
+<head>
+    <title>Diego Cabrera </title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4" style="height:102px;">
+                <a href="../index.html">
+                    <h3 id="name-main">DIEGO CABRERA</h3>
+                </a>
+            </div>
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4" id="bar-div">
+                <div class="tab">
+                    <a href="../projectspage.html">
+                        <button class="tablinks">
+                            PROJECTS
+                        </button>
+                    </a>
+                    <a href="../aboutme.html">
+                        <button class="tablinks">
+                            ABOUT ME
+                        </button>
+                    </a>
+                    <a href="../contact.html">
+                        <button class="tablinks">
+                            CONTACT
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <h3 class="project-class">Umbrella Blog - November 2017</h3>
+        <h4>
+            • Group project using Git for source control.
+            <br>• Site allows for user management with ability to create and delete users.
+            <br>• Blog uses repositories in conjunction with stored procedures to create, edit, delete, find, and approve blog
+            posts as well as hash tags and categories.
+            <br>• Created all repositories, managers, category/hash tag integration tests, and user creation through ASP.Identity
+            as part of the group.
+        </h4>
+        <h4 class="project-class">
+            <a href="http://bitbucket.thesoftwareguild.com/users/dcabrera/repos/finalwork/browse/UmbrellaBlog">View the code</a>
+        </h4>
+
+        <hr>
+        <div class="row">
+            <div class="col-xs-6">
+                <img class="preview-img" src="..\gifs\UmbrellaBlog\Home.gif">
+            </div>
+            <div class="col-xs-6">
+                <h4>
+                    Home page for blog where most recent blog posts are loaded for easy access. A shared view lets the user access the contact,
+                    blog pages, and login/registration pages.
+                </h4>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-6">
+                <img class="preview-img" src="..\gifs\UmbrellaBlog\BlogPosts.gif">
+            </div>
+            <div class="col-xs-6">
+                <h4>
+                    Blog posts can be searched by tags or categories. Only employees and admins can create, view, edit or delete blog posts.
+                    All the functions for the posts are taken care of using store procedures that are acessed through SQL
+                    commnads, data reader, and parameters/
+                </h4>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-6">
+                <img class="preview-img" src="..\gifs\UmbrellaBlog\Admin.gif">
+            </div>
+            <div class="col-xs-6">
+                <h4>
+                    Only admin can view, edit, delete, and update users and categories. Posts need to be approved before users can see the posts.
+                    ASP.Net Identity was used to create user authentication. Restriction was done in the views.
+                </h4>
+            </div>
+        </div>
+        <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </div>
+</body>
+
+</html>

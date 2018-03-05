@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/index.css" rel="stylesheet">
+
+<head>
+    <title>Diego Cabrera </title>
+    <style>
+        /* Style the Image Used to Trigger the Modal */
+
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #myImg:hover {
+            opacity: 0.7;
+        }
+
+        /* The Modal (background) */
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content (Image) */
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Caption of Modal Image (Image Text) - Same Width as the Image */
+
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation - Zoom in the Modal */
+
+        .modal-content,
+        #caption {
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4" style="height:102px;">
+                <a href="../index.html">
+                    <h3 id="name-main">DIEGO CABRERA</h3>
+                </a>
+            </div>
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4" id="bar-div">
+                <div class="tab">
+                    <a href="../projectspage.html">
+                        <button class="tablinks">
+                            PROJECTS
+                        </button>
+                    </a>
+                    <a href="../aboutme.html">
+                        <button class="tablinks">
+                            ABOUT ME
+                        </button>
+                    </a>
+                    <a href="../contact.html">
+                        <button class="tablinks">
+                            CONTACT
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <h3 class="project-class">Guild Cars - November 2017</h3>
+        <h4>
+            • An online car dealership built from the ground up from database to repositories/models and then to controllers and views.
+            <br> • Both Web API and MVC controllers were used to create search functionality, returing view models, and setting
+            routes/HTTP methods.
+            <br> • Pages were styled with bootstrap and a CSS stylesheet.</h4>
+        <h4 class="project-class">
+            <a href="http://bitbucket.thesoftwareguild.com/users/dcabrera/repos/finalwork/browse/GuildCars">View the code</a>
+        </h4>
+
+        <hr>
+
+
+
+        <div class="row">
+            <div class="col-xs-6">
+                <img id="myImg" class="preview-img" src="..\gifs\GuildCars\HomePage.gif">
+            </div>
+            <div class="col-xs-6">
+                <h4>
+                    Home page in action. Responsive page with hover styling. User can access any of the tabs based on type of user and availability
+                    of car. Main image shows current specials. Featured vehicles show most recent cars that are labled as
+                    featured.
+                </h4>
+            </div>
+
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-xs-6">
+                <img id="myImg" class="preview-img" src="..\gifs\GuildCars\SearchFunctionality.gif">
+            </div>
+            <div class="col-xs-6">
+                <h4>
+                    To search for a vehicle: you can use model, make, or year. You can also apply filters to narrow down the search results.
+                    The search query is used in the stored procedure.
+                </h4>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-6">
+                <img id="myImg" class="preview-img" src="..\gifs\GuildCars\AdminLogInFunctions.gif">
+            </div>
+            <div class="col-xs-6">
+                <h4>
+                    Admin functions in action. As an admin you can add, delete, edit and view users/vehicles/specials. These options are not
+                    available as a regular user and limited as an employee. User authentication is done in the views.
+                </h4>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-6">
+                <img id="myImg" class="preview-img" src="..\gifs\GuildCars\DetailsToContact.gif">
+            </div>
+            <div class="col-xs-6">
+                <h4>
+                    To view details you can click on a vehicle and it will take you to the details page. On the details page you can select the
+                    contact us button and the VIN number will be automatically loaded in the message to allow the customer
+                    and employee to know which car is being contacted about.
+                </h4>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-6">
+                <img id="myImg" class="preview-img" src="..\gifs\GuildCars\Purchase.gif">
+            </div>
+            <div class="col-xs-6">
+                <h4>
+                    Purchasing a vehicle can be done by an admin or employee. Upon selecting purchase you are taken to a the purchase page while
+                    displaying all the vehicles details.
+                </h4>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+</body>
+<script>// Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal 
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+
+    }
+    delete modalImg;
+    delete img;
+</script>
+
+</html>

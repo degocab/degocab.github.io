@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+
+<head>
+    <title>Diego Cabrera </title>
+    <style>
+        #x {
+            opacity: .4;
+
+            position: relative;
+            border-radius: 5px;
+
+        }
+
+        #x:hover {
+            opacity: .1;
+            color: rgb(rgb(255, 255, 255, 1));
+        }
+
+        #x .icon {
+            position: absolute;
+            z-index: 2;
+
+        }
+
+        /* .comment .button {
+   visibility: hidden;
+}
+
+.comment:hover ~ .button {
+   visibility: visible;
+   top:50%;
+   right:50%;
+}  */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4" style="height:102px;">
+                <a href="index.html">
+                    <h3 id="name-main">DIEGO CABRERA</h3>
+                </a>
+            </div>
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4" id="bar-div">
+                <div class="tab">
+                    <a href="projectspage.html">
+                        <button class="tablinks">
+                            Projects
+                        </button>
+                    </a>
+                    <a href="aboutme.html">
+                        <button class="tablinks">
+                            About
+                        </button>
+                    </a>
+                    <a href="contact.html">
+                        <button class="tablinks">
+                            Contact
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+
+            <div class="col-xs-12" id="xx">
+
+
+                <div class="comment" id="x">
+
+                    <img style="height:150px;" src="#" alt="" hidden="hidden" id="template">
+                </div>
+
+
+
+            </div>
+            <div class="col-xs-6">
+            </div>
+
+            <div class="col-xs-6" id="hidden-id">
+      
+                    <div>
+                        <h1 id="intro-welcome" class="intro-text">Welcome</h1>
+                        <h5 id="intro-index">
+                            Hello, I am Diego -- Jr Full Stack Software Developer based in Akron Ohio
+                            <br>
+                            <!-- <a href="projectspage.html">Explore</a> -->
+                        </h5>
+                    </div>
+        
+
+            </div>
+
+        </div>
+    </div>
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+</body>
+<script>
+    (function (window, document, undefined) {
+        "use strict";
+        var init = function () {
+            var canvas = document.querySelector('#x');
+            var icon_template = document.querySelector('#template');
+            var icon_width = 40;
+            var icon_height = 30;
+            var the_images = [
+
+                'gifs/GuildCars/Purchase.gif',
+                'gifs/GuildCars/AdminLoginFunctions.gif',
+                'gifs/GuildCars/DetailsToContact.gif',
+                'gifs/GuildCars/HomePage.gif',
+                'gifs/GuildCars/Purchase.gif',
+                'gifs/GuildCars/SearchFunctionality.gif',
+                'gifs/SIS/AdminFunctions.gif',
+                'gifs/SIS/Home.gif',
+                'gifs/SIS/StudentFunctions.gif',
+                'gifs/UmbrellaBlog/Admin.gif',
+                'gifs/UmbrellaBlog/BlogPosts.gif',
+                'gifs/UmbrellaBlog/Home.gif'
+
+            ];
+            var pickRandomImage = function () {
+                var i = Math.floor(Math.random() * the_images.length);
+                return the_images[i];
+            };
+            var total_number_of_images = 15;
+            var max_height = canvas.offsetHeight - icon_height;
+            var max_width = canvas.offsetWidth - icon_width;
+            var randomCoordinate = function () {
+                var r = [];
+                var x = Math.floor(Math.random() * max_width);
+                var y = Math.floor(Math.random() * max_height);
+                r = [x, y];
+                return r;
+            };
+            var createImage = function () {
+                var node = icon_template.cloneNode(true);
+                var xy = randomCoordinate();
+                node.removeAttribute('id');
+                node.removeAttribute('hidden');
+                node.style.top = xy[1] + 'px';
+                node.style.left = xy[0] + 'px';
+                node.setAttribute('src', pickRandomImage());
+                canvas.appendChild(node);
+            };
+            for (var i = 0; i < total_number_of_images; i++) {
+                createImage();
+            };
+        };
+        window.addEventListener('load', init);
+    })(window, document);
+</script>
+
+</html>

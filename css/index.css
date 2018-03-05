@@ -1,0 +1,232 @@
+#NameTitle {
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.tab {
+    overflow: hidden;
+    border: none;
+    background: transparent;
+    color: white;
+
+}
+body{
+
+    /* background-image:url("../images/background.jpg"); */
+
+    /* background-color: rgb(38, 60, 80); rgb(48,57, 69)*/
+    background-color: rgb(42, 51, 64);
+}
+
+
+
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+h3,h4,h2{
+    color: white;
+}
+a{
+    color: white;
+}
+.tab button:hover {
+
+    border-top: 5px solid white; 
+    /* border-top-color: white; */
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tablinks {
+    line-height: 100px;
+    font-size: 20px;
+
+}
+
+a:hover, a:focus, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+hr {
+    border: 1px dashed white;
+}
+
+.preview-img {
+    align-items: center;
+    height: 300px;
+    /* width: 600px; */
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.preview {
+    margin-top: 20px;
+    margin-left: 25px;
+    text-align: center;
+}
+.preview-img:hover{
+    /* -webkit-box-shadow: 1px 1px 5px 8px rgba(156, 156, 156, 0.75);
+    -moz-box-shadow: 1px 1px 5px 8px rgba(156, 156, 156, 0.75);
+    box-shadow: 1px 1px 5px 10px rgba(156, 156, 156, 0.75); */
+    transform: scale(1.08);
+    z-index:9999;
+
+}
+#contact-id{
+    text-align: left;
+    padding-left: 110px;
+
+}
+#contact-id-linkedin{
+text-decoration: underline;
+}
+#contact-g{
+    display: inline-block;
+}
+.project-class{
+    text-align: center;
+
+}
+h4>a{
+    text-decoration: underline;
+}
+h4>a:hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+
+/* // best seen at 1500px or less */
+
+/* html, body { height: 100%; } */
+/* body {
+  background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
+  overflow: hidden;
+} */
+
+.ocean {
+    z-index: -90;
+  height:5%;
+  width:100%;
+  position: fixed;
+  bottom:0;
+  left:0;
+  background: rgb(48,57, 69);
+
+}
+#main-ocean{
+    position: absolute;
+}
+/* rgb(28, 37, 49) */
+.wave {
+  /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;  */
+  background: url("../images/wave.svg") repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 25s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 25s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+.row{
+color: white;
+    
+
+}
+.container{
+    /* margin-left: 50px;
+    margin-right: 50px;*/
+    margin: auto;
+} 
+html{
+    overflow-x: hidden;
+}
+#name-main{
+    color:white;
+    padding-top:20px;
+    font-size:20px;
+    text-align: center;
+}
+#intro-index{
+font-style: italic;
+    bottom: 50%;
+    position: fixed;
+
+    
+}
+
+#intro-welcome{
+    font-size: 72px;
+    bottom: 60%;
+    position: fixed;
+
+}
+#hidden-id{
+visibility: hidden;
+
+}
+
+.intro-text{
+    padding-left: 110px;
+    opacity: 1;
+}
+.index-imgs{
+    height: 100px;
+}
+#template{
+    opacity: .25;
+    border-radius: 5px;
+}
+#xx:hover ~ #hidden-id {
+    visibility: visible;
+    background-image: url(../projectspage.html);
+}
+
+/*only for checking borders and layout*/
+
+/* div {
+    border: 1px dotted black;
+} */
